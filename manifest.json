@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Ad Page Close for Superseries.me",
+    "short_name": "Ad Page Close",
+    "version": "1.0",
+    "description": "Uma extensão simples para o Chrome que fechas as novas paginas de anucioas abertas, apartir do site superseries.me",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "assets/img/icon.png",
+        "default_title": "Ad Page Close"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "assets/js/service-worker.js"
+    }
+}

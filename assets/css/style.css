@@ -1,0 +1,163 @@
+:root {
+    --primary-color: rgb(251, 164, 1);
+    --white-color: #FFF;
+}
+
+body{
+    background: #000;
+    width: 400px;
+    padding: 50px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    color: var(--white-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 0 !important;
+}
+
+/* small, label {
+    color: var(--white-color);
+} */
+
+small {
+    margin-bottom: 40px;
+}
+
+label, p {
+    margin-bottom: 10px;
+}
+
+
+button {
+    box-sizing: border-box;
+    width: 250px;
+    padding: 15px 85px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    opacity: .6;
+}
+
+button:hover {
+    opacity: 1 !important;
+}
+
+input[type="text"] {
+    padding: 15px 85px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    text-align: center;
+    outline: solid 2px transparent !important;
+}
+
+input[type="text"]:focus{
+    outline: solid 2px var(--primary-color) !important;
+    /* outline: none; */
+    box-shadow: none;
+}
+
+span.add, 
+span.close, 
+span.list, 
+span.remove {
+    font-size: 2rem;
+    cursor: pointer;
+    opacity: .6;
+}
+
+span.add:hover, 
+span.close:hover, 
+span.list:hover, 
+span.remove:hover{
+  opacity: 1;
+}
+
+span.list{
+    margin-top: 20px;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+span.add {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px var(--white-color);
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    opacity: .6;
+}
+
+span.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+}
+
+span.remove {
+    font-size: .8rem;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    min-width: 250px;
+    opacity: .6;
+}
+
+li:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#main {
+    display: none;
+}
+
+#form-add-domain {
+    display: none;
+}
+
+#form-list-domain {
+    display: none;
+}
+
+#form-list-domain > ul {
+    padding: 20px;
+    height: 100px;
+    width: 350px;
+    overflow-y: scroll;
+}
