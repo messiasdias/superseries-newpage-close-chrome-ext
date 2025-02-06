@@ -1,5 +1,7 @@
 (async () => {
   const DOMAIN_LIST = [
+    'iqbroker.com',
+    'iqoption',
     'stakeaffiliates-br.com',
     'kts.vasstycom.com',
     'suspectplainrevulsion.com',
@@ -11,6 +13,12 @@
     'c.srvpcn.com',
     'bet'
   ];
+
+  chrome.tabs.query({}, (tabs) => {
+    tabs.forEach((tab) => {
+        console.log(`Aba: ${tab.title}, URL: ${tab.url}`);
+    });
+});
 
   //chrome.storage.local.set({ domainList: [], defaultDomainList: []})
 
