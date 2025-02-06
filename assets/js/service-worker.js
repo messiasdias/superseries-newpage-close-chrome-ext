@@ -14,12 +14,7 @@
     'bet'
   ];
 
-  chrome.tabs.query({}, (tabs) => {
-    tabs.forEach((tab) => {
-        console.log(`Aba: ${tab.title}, URL: ${tab.url}`);
-    });
-});
-
+  //@to-do reset local storage
   //chrome.storage.local.set({ domainList: [], defaultDomainList: []})
 
   var storage = await chrome.storage.local.get()
