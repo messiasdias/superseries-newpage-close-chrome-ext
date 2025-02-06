@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gupdate xmlns="http://www.google.com/update2/response" protocol="2.0">
-  <app appid="SEU_ID_DA_EXTENSAO">
-    <updatecheck codebase="https://seusite.com/minha-extensao.zip" version="1.0" prodversionmin="130.0.6723.58"/>
+  <app appid="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">
+    <updatecheck codebase="https://github.com/messiasdias/superseries-newpage-close-chrome-ext/archive/refs/tags/1.0.zip" version="1.0" prodversionmin="130.0.6723.58"/>
   </app>
 </gupdate>
